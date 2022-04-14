@@ -499,3 +499,59 @@ select {
         display: none;
     }
 }
+
+
+.section-team{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+.section-team.BigWord:before{
+    content: "T";
+    color: #222222;
+}
+.section-team h3 {
+    font-family: GothamBook;
+    font-size: 30px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+.section-team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-team-people{
+    width: 25%;
+    padding: 0px 15px;
+}
+.section-team-people img{
+    width: 100%;
+}
+.section-team-people .people-info{
+    position: relative;
+    left: 0px;
+    bottom: 42px;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+.people-info .name{
+    font-family: "GothamMedium";
+    font-size: 20px;
+    color: #11749e;
+}
+.people-info .position{
+    font-family: "GothamMedium";
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px){
+    .section-team-people{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .section-team-people{
+        width: 100%;
+    }
+}
