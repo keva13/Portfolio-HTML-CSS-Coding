@@ -5,6 +5,31 @@
   margin: 0;
 }
 
+.button{
+    font-family: "GothamMedium";
+    font-size: 15px;
+    background-color: #11749e;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+input, textarea{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 40px;
+}
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -271,7 +296,7 @@ select {
     .hTitle{
         font-size: calc(40 * (100vw / 1200));
     }
-    .section-about_agency:before{
+    .BigWord:before{
         font-size: calc(386 * (100vw / 1200));
     }
     .section-about_agency{
@@ -288,7 +313,7 @@ select {
     .hTitle{
         font-size: calc(60 * (100vw / 1200));
     }
-    .section-about_agency:before{
+    .BigWord:before{
         font-size: calc(586 * (100vw / 1200));
     }
     
@@ -477,15 +502,6 @@ select {
 }
 .section-key_feature .content .button{
     width: 400px;
-    font-family: "GothamMedium";
-    font-size: 15px;
-    background-color: #11749e;
-    border: 0;
-    color: white;
-    padding: 10px 20px;
-    display: block;
-    margin-bottom: 20px;
-    text-transform: uppercase;
     text-align: left;
 }
 .section-key_feature .content .button:first-of-type{
@@ -553,5 +569,38 @@ select {
 @media screen and (max-width: 600px){
     .section-team-people{
         width: 100%;
+    }
+}
+
+
+.section-contact{
+    text-align: center;
+    color: white;
+    background-image: url("../img/contact-background.png");
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+.section-contact.BigWord::before{
+    content: "C";
+}
+.section-contact #form{
+    margin-top: 140px;
+    padding: 20px;
+}
+.section-contact #form .contact-inputs{
+    display: flex;
+}
+.section-contact #form .contact-inputs input:not(:last-child){
+    margin-right: 25px;
+}
+.section-contact #form .button{
+    margin: auto;
+    font-size: 24px;
+    padding: 13px 63px;
+}
+@media screen and (max-width: 600px){
+    .section-contact #form .contact-inputs{
+        display: block;
     }
 }
