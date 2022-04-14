@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   font-family: GothamBook;
   font-size: 15px;
+  color: #222222;
 }
 
 input,
@@ -219,13 +220,13 @@ select {
     padding-top: 150px;
     padding-bottom: 70px;
 }
-.section-about_agency h2{
+.hTitle{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: GothamMedium;
     text-transform: uppercase;
 }
-.section-about_agency:before{
+.BigWord:before{
     content: "W";
     position: absolute;
     left: 0;
@@ -234,7 +235,7 @@ select {
     font-family: RobotoBold;
     color: white;
     opacity: 0.2;
-    line-height: 0.2;
+    line-height: 0.27;
 }
 .section-about_agency-wrapper{
     display: flex;
@@ -267,7 +268,7 @@ select {
         width: 50%;
         margin-bottom: 50px;
     }
-    .section-about_agency h2{
+    .hTitle{
         font-size: calc(40 * (100vw / 1200));
     }
     .section-about_agency:before{
@@ -284,7 +285,7 @@ select {
         width: 100%;
         margin-bottom: 50px;
     }
-    .section-about_agency h2{
+    .hTitle{
         font-size: calc(60 * (100vw / 1200));
     }
     .section-about_agency:before{
@@ -294,9 +295,6 @@ select {
 }
 
 
-.section-news{
-
-}
 .news{
     display: flex;
     align-items: center;
@@ -307,7 +305,7 @@ select {
 }
 .news.news-right{
     background-color: #f3f3f3;
-    color: black;
+    color: #222222;
 }
 .news .news-text{
     margin-left: calc((100vw - 1200px) / 2);
@@ -367,4 +365,58 @@ select {
         flex-direction: column-reverse;
     }
     
+}
+
+.section-blog.BigWord::before{
+    content: "B";
+    color: #222222;
+}
+.section-blog{
+    background-color: white;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+.section-blog h3{
+    font-family: GothamBook;
+    font-size: 30px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+.section-blog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-blog-wrapper .section-blog-item{
+    width: 25%;
+    padding: 15px;
+    margin-bottom: 50px;
+
+}
+.section-blog-wrapper .section-blog-item img{
+    width: 100%;
+}
+.section-blog-wrapper .section-blog-item h4{
+    font-family: GothamMedium;
+    font-size: 18px;
+    color: #11749e;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.section-blog-wrapper .section-blog-item p{
+    font-family: GothamBook;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px){
+    .section-blog-wrapper .section-blog-item{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .section-blog-wrapper .section-blog-item{
+        width: 100%;
+    }
 }
