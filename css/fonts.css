@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "MyriadPro"; 
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("truetype"); 
+    
+} 
+@font-face {
+    font-family: "Gotham"; 
+    src: url("../fonts/GothamBold.ttf") format("truetype"); 
+} 
+@font-face {
+    font-family: "GothamBook"; 
+    src: url("../fonts/GothamBook.ttf") format("truetype"); 
+} 
+@font-face {
+    font-family: "GothamMedium"; 
+    src: url("../fonts/GothamMedium.ttf") format("truetype"); 
+    font-style: normal; 
+} 
+@font-face {
+    font-family: "OpenSans"; 
+    src: url("../fonts/OpenSans.ttf") format("truetype"); 
+} 
+@font-face {
+    font-family: "RobotoBold"; 
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
+} 
