@@ -451,3 +451,51 @@ select {
         margin-bottom: 60px;
     }
 }
+
+.section-key_feature{
+    color: white;
+    background-image: url("../img/contact-background.png");
+    padding: 100px 20px ;
+}
+.section-key_feature .container{
+    display: flex;
+    align-items: center;
+}
+.section-key_feature .content{
+}
+.section-key_feature .content h3{
+    font-family: "GothamMedium";
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.section-key_feature .content p{
+    font-family: GothamBook;
+    font-size: 15px;
+    margin-bottom: 60px;
+    width: 60%;
+}
+.section-key_feature .content .button{
+    width: 400px;
+    font-family: "GothamMedium";
+    font-size: 15px;
+    background-color: #11749e;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.section-key_feature .content .button:first-of-type{
+    width: 370px;
+}
+.section-key_feature .content .button:last-of-type{
+    width: 430px;
+}
+@media screen and (max-width: 900px){
+    .section-key_feature .phone{
+        display: none;
+    }
+}
