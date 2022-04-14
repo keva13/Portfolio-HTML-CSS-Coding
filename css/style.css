@@ -604,3 +604,26 @@ select {
         display: block;
     }
 }
+
+.iframeMap{
+    width: 100vw;
+    height: 330px;
+}
+footer{
+    background-color: #222222;
+}
+footer>div{
+    padding: 50px 20px;
+}    
+footer .container{
+    font-family: "RobotoRegular";
+    font-size: 13px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .container img{
+    vertical-align: bottom;
+}
